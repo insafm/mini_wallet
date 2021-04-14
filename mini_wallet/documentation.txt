@@ -44,8 +44,3 @@ curl --location --request PATCH 'http://localhost:8001/api/v1/wallet' --header '
 curl --location --request POST 'http://localhost:8001/api/v1/wallet/deposits' --header 'Authorization: Token 0612b816365b78cbc1d7f3d108d2690c3153a825' --form 'amount="100000"' --form 'reference_id="50535246-dcb2-4929-8cc9-004ea06f5241"'
 
 curl --location --request POST 'http://localhost:8001/api/v1/wallet/withdrawals' --header 'Authorization: Token 0612b816365b78cbc1d7f3d108d2690c3153a825' --form 'amount="60000"' --form 'reference_id="50535246-dcb2-4929-8cc9-004ea06f5241"'
-
------------------------------------------------------------
-python3 -m pipenv install --skip-lock
-python3 -m pipenv shell
-python3 manage.py migrate
