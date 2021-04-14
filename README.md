@@ -33,17 +33,19 @@ API Details:
 --------------------------------------------------------
 
 For authentication pass Token through header:
+
 Authorization: Token <my token>
 
 Routes:
 --------------------------------------------------------
-POST - http://localhost/api/v1/init
-GET - http://localhost/api/v1/wallet [View my wallet balance]
-POST - http://localhost/api/v1/wallet [Enable my wallet]
-PATCH - http://localhost/api/v1/wallet [Disable my wallet]
-POST - http://localhost/api/v1/wallet/deposits [Add virtual money to my wallet]
-POST - http://localhost/api/v1/wallet/withdrawals [Use virtual money from my wallet]
+- POST - http://localhost/api/v1/init
+- GET - http://localhost/api/v1/wallet [View my wallet balance]
+- POST - http://localhost/api/v1/wallet [Enable my wallet]
+- PATCH - http://localhost/api/v1/wallet [Disable my wallet]
+- POST - http://localhost/api/v1/wallet/deposits [Add virtual money to my wallet]
+- POST - http://localhost/api/v1/wallet/withdrawals [Use virtual money from my wallet]
 
+--------------------------------------------------------
 
 curl --location --request POST 'http://localhost:7777/api/v1/init' --form 'customer_xid="ea0212d3-abd6-406f-8c67-868e814a2436"'
 
