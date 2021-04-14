@@ -34,7 +34,10 @@ API Details:
 
 For authentication pass Token through header:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Authorization: Token <my token>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Routes:
 --------------------------------------------------------
@@ -49,7 +52,9 @@ Routes:
 
 curl --location --request POST 'http://localhost:7777/api/v1/init' --form 'customer_xid="ea0212d3-abd6-406f-8c67-868e814a2436"'
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Token: 0612b816365b78cbc1d7f3d108d2690c3153a825
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 curl --location --request POST 'http://localhost:7777/api/v1/wallet' --header 'Authorization: Token 0612b816365b78cbc1d7f3d108d2690c3153a825'
 
