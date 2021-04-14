@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block javascript %}
+{% endblock %}
+
+{% block content %}
+  {% if page_title %}
+    <h1 class="page-header">{{page_title}}</h1>
+  {% else %}
+    <h1 class="page-header">Profile</h1>
+  {% endif %}
+
+  <!-- CONTAINER TO DISPLAY THE CROPPED IMAGES -->
+  <div class="row" style="margin-top: 20px">
+    {% if data %}
+      <div class="col-sm-12 col-md-6">
+        <ul>
+          <li>User ID: {{ data.user_id }}</li>
+          <li>Bio: {{ data.bio }}</li>
+          <li>Website: {{ data.website }}</li>
+          <li>DOB: {{ data.birth_date }}</li>
+          <li>Phone number: {{ data.phone_number }}</li>
+          <li>Gender: {{ data.gender }}</li>
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+
+{% endblock %}

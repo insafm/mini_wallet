@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block javascript %}
+{% endblock %}
+
+{% block content %}
+<h1 class="page-header">Dashboard</h1>
+
+<div class="row">
+  <!-- MENU 2 -->
+  <a href="{% url 'profile' %}" class="btn btn-success">Profile</a>
+  <a href="{% url 'ins_logout' %}" class="btn btn-danger">Logout</a>
+</div>
+
+{% endblock %}

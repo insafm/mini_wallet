@@ -1,2 +1,1 @@
-# mini_wallet
-Mini Wallet Exercise
+# django_test
